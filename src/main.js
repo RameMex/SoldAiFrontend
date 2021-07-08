@@ -4,7 +4,7 @@ import VueSocketIO from 'vue-socket.io'
 import io from 'socket.io-client'
 const optionsVueIO = {
     debug: true,
-    connection: io(process.env.VUE_APP_URL || 'http://localhost:3001')
+    connection: io('https://chatpokeapi.herokuapp.com/')
   }
   
 const app = createApp(App).use(new VueSocketIO(optionsVueIO))            
