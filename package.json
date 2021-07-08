@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "start": "node main.js"
   },
   "dependencies": {
     "socket.io-client": "^4.1.2",
