@@ -7,6 +7,8 @@ const optionsVueIO = {
     debug: true,
     connection: io('https://chatpokeapi.herokuapp.com/')
   }
-const app = createApp(App).use(socket).use(new VueSocketIO(optionsVueIO))            
+const app = createApp(App);
+app.use(socket);    
+app.use(new VueSocketIO(optionsVueIO)); 
 
 app.mount('#app')
